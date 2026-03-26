@@ -1,0 +1,12 @@
+Bai3_GenderRating.class
+Bai3_GenderRating$GenderReducer.class
+Bai4_AgeGroupRating$AgeGroupMapper.class
+Bai2_GenreRating$GenreMapper.class
+Bai4_AgeGroupRating.class
+Bai1_MovieRating$RatingMapper.class
+Bai1_MovieRating$RatingReducer.class
+Bai2_GenreRating.class
+Bai4_AgeGroupRating$AgeGroupReducer.class
+Bai1_MovieRating.class
+Bai2_GenreRating$GenreReducer.class
+Bai3_GenderRating$GenderMapper.class

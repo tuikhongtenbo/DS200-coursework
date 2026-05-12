@@ -1,0 +1,27 @@
+MovieID: 1010, Title: Lawrence of Arabia (1962), Gender: F, Avg Rating: 3.31
+MovieID: 1010, Title: Lawrence of Arabia (1962), Gender: M, Avg Rating: 3.55
+MovieID: 1012, Title: Psycho (1960), Gender: F, Avg Rating: 4.00
+MovieID: 1013, Title: The Godfather: Part II (1974), Gender: F, Avg Rating: 3.94
+MovieID: 1013, Title: The Godfather: Part II (1974), Gender: M, Avg Rating: 4.06
+MovieID: 1015, Title: Sunset Boulevard (1950), Gender: F, Avg Rating: 4.50
+MovieID: 1015, Title: Sunset Boulevard (1950), Gender: M, Avg Rating: 4.33
+MovieID: 1020, Title: E.T. the Extra-Terrestrial (1982), Gender: F, Avg Rating: 3.55
+MovieID: 1020, Title: E.T. the Extra-Terrestrial (1982), Gender: M, Avg Rating: 3.81
+MovieID: 1025, Title: The Terminator (1984), Gender: F, Avg Rating: 4.14
+MovieID: 1025, Title: The Terminator (1984), Gender: M, Avg Rating: 3.93
+MovieID: 1028, Title: Fight Club (1999), Gender: F, Avg Rating: 3.50
+MovieID: 1028, Title: Fight Club (1999), Gender: M, Avg Rating: 3.50
+MovieID: 1030, Title: The Silence of the Lambs (1991), Gender: F, Avg Rating: 3.00
+MovieID: 1030, Title: The Silence of the Lambs (1991), Gender: M, Avg Rating: 3.33
+MovieID: 1037, Title: The Lord of the Rings: The Fellowship of the Ring (2001), Gender: F, Avg Rating: 3.80
+MovieID: 1037, Title: The Lord of the Rings: The Fellowship of the Ring (2001), Gender: M, Avg Rating: 4.00
+MovieID: 1039, Title: The Lord of the Rings: The Return of the King (2003), Gender: F, Avg Rating: 3.90
+MovieID: 1039, Title: The Lord of the Rings: The Return of the King (2003), Gender: M, Avg Rating: 3.75
+MovieID: 1040, Title: Gladiator (2000), Gender: F, Avg Rating: 3.64
+MovieID: 1040, Title: Gladiator (2000), Gender: M, Avg Rating: 3.59
+MovieID: 1043, Title: No Country for Old Men (2007), Gender: F, Avg Rating: 3.83
+MovieID: 1043, Title: No Country for Old Men (2007), Gender: M, Avg Rating: 3.92
+MovieID: 1047, Title: The Social Network (2010), Gender: F, Avg Rating: 3.67
+MovieID: 1047, Title: The Social Network (2010), Gender: M, Avg Rating: 4.00
+MovieID: 1050, Title: Mad Max: Fury Road (2015), Gender: F, Avg Rating: 3.32
+MovieID: 1050, Title: Mad Max: Fury Road (2015), Gender: M, Avg Rating: 4.00

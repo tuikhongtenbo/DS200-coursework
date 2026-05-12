@@ -1,0 +1,14 @@
+Occupation: Programmer           | Avg Rating: 4.25 | Total Votes: 10
+Occupation: Student              | Avg Rating: 4.00 | Total Votes: 8
+Occupation: Designer             | Avg Rating: 4.00 | Total Votes: 13
+Occupation: Nurse                | Avg Rating: 3.86 | Total Votes: 11
+Occupation: Consultant           | Avg Rating: 3.86 | Total Votes: 14
+Occupation: Journalist           | Avg Rating: 3.85 | Total Votes: 17
+Occupation: Artist               | Avg Rating: 3.73 | Total Votes: 11
+Occupation: Teacher              | Avg Rating: 3.70 | Total Votes: 5
+Occupation: Doctor               | Avg Rating: 3.69 | Total Votes: 21
+Occupation: Lawyer               | Avg Rating: 3.65 | Total Votes: 17
+Occupation: Salesperson          | Avg Rating: 3.65 | Total Votes: 17
+Occupation: Accountant           | Avg Rating: 3.58 | Total Votes: 6
+Occupation: Engineer             | Avg Rating: 3.56 | Total Votes: 18
+Occupation: Manager              | Avg Rating: 3.47 | Total Votes: 16

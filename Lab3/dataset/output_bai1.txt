@@ -1,0 +1,3 @@
+--- Danh sach phim thoa dieu kien (>= 50 vote) ---
+
+Khong co phim nao co it nhat 50 luot danh gia.

@@ -1,8 +1,6 @@
 """
-/*
- * File này chạy Storage Server. Lắng nghe topic kết quả từ Kafka và lưu trữ dữ liệu
- * vào Database PostgreSQL. Đồng thời vẫn có thể ghi log ra file JSON Lines nếu cần.
- */
+Chạy Storage Server. Lắng nghe topic kết quả từ Kafka và lưu trữ dữ liệu
+vào Database PostgreSQL. Đồng thời vẫn có thể ghi log ra file JSON Lines nếu cần.
 """
 
 import os

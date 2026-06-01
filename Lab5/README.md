@@ -4,7 +4,7 @@
 Dự án này tập trung giải quyết bài toán phát hiện và đếm số lượng người thông qua nguồn cấp dữ liệu từ camera trực tiếp. Điểm đặc biệt của dự án là việc áp dụng các công nghệ thuộc lĩnh vực Dữ liệu lớn (Big Data) để đảm bảo hệ thống có khả năng xử lý liên tục, phân tán và chịu tải cao.
 ---
 
-## II. KIẾN TRÚC HỆ THỐNG (DATA PIPELINE)
+## I. KIẾN TRÚC HỆ THỐNG (DATA PIPELINE)
 Hệ thống được chia thành các dịch vụ độc lập, giao tiếp bất đồng bộ qua hệ thống Message Broker là **Apache Kafka**.
 
 ```mermaid
@@ -27,7 +27,7 @@ graph TD
 
 ---
 
-## III. YÊU CẦU MÔI TRƯỜNG & CÀI ĐẶT
+## II. YÊU CẦU MÔI TRƯỜNG & CÀI ĐẶT
 Để vận hành dự án trên máy cá nhân, hệ thống yêu cầu:
 - **Docker Desktop**: Chạy Kafka, Zookeeper và **PostgreSQL** Database.
 - **Python (>=3.8)**: Chạy mã nguồn logic.
@@ -45,7 +45,7 @@ graph TD
 
 ---
 
-## IV. HƯỚNG DẪN VẬN HÀNH (TESTING)
+## III. HƯỚNG DẪN VẬN HÀNH (TESTING)
 Hệ thống yêu cầu chạy song song 3 phiên làm việc (Terminal/Command Prompt) khác nhau. Lưu ý **cần đứng ở thư mục gốc của dự án** khi gõ lệnh.
 
 **1: Kích hoạt Hệ thống Lưu Trữ**
@@ -66,5 +66,4 @@ python -m src.camera.camera_app
 
 ---
 
-## V. KẾT QUẢ ĐẠT ĐƯỢC (OUTPUT)
-*(Hình ảnh minh họa hệ thống đang hoạt động và log dữ liệu sẽ được sinh viên dán vào đây trước khi nộp bài)*
+## IV. KẾT QUẢ ĐẠT ĐƯỢC (OUTPUT)

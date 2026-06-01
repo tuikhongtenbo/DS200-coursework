@@ -1,7 +1,7 @@
 # XÂY DỰNG HỆ THỐNG ĐẾM NGƯỜI VỚI BIG DATA
 
 ---
-Dự án này tập trung giải quyết bài toán phát hiện và đếm số lượng người thông qua nguồn cấp dữ liệu từ camera trực tiếp. Điểm đặc biệt của dự án là việc áp dụng các công nghệ thuộc lĩnh vực Dữ liệu lớn (Big Data) để đảm bảo hệ thống có khả năng xử lý liên tục, phân tán và chịu tải cao.
+Bài tập này tập trung giải quyết bài toán phát hiện và đếm số lượng người thông qua nguồn cấp dữ liệu từ camera trực tiếp. Điểm đặc biệt của bài tập là việc áp dụng các công nghệ trong bối cảnh Dữ liệu lớn (Big Data) để đảm bảo hệ thống có khả năng xử lý liên tục, phân tán và chịu tải cao.
 ---
 
 ## I. KIẾN TRÚC HỆ THỐNG (DATA PIPELINE)

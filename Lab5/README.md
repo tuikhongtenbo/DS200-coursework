@@ -46,24 +46,29 @@ graph TD
 ---
 
 ## III. HƯỚNG DẪN VẬN HÀNH (TESTING)
-Hệ thống yêu cầu chạy song song 3 phiên làm việc (Terminal/Command Prompt) khác nhau. Lưu ý **cần đứng ở thư mục gốc của dự án** khi gõ lệnh.
-
+Hệ thống yêu cầu chạy song song 3 phiên làm việc (Terminal/Command Prompt) khác nhau.
 **1: Kích hoạt Hệ thống Lưu Trữ**
 ```cmd
 python -m src.storage.storage_app
 ```
 
 **2: Kích hoạt Hệ thống AI Xử lý**
-*(Việc tải trọng số YOLO có thể mất chút thời gian ở lần khởi chạy đầu tiên)*
 ```cmd
 python -m src.processor.processor_app
 ```
 
-**3: Bật Kết nối Camera**
-```cmd
-python -m src.camera.camera_app
-```
+**3: Bật Kết nối Nguồn Ảnh/Camera**
+Bây giờ hệ thống hỗ trợ cả camera trực tiếp và luồng ảnh tĩnh. Có thể chọn cách chạy thông qua parser `--source`.
 
----
-
-## IV. KẾT QUẢ ĐẠT ĐƯỢC (OUTPUT)
+- **Dùng Webcam trực tiếp:**
+  ```cmd
+  python -m src.camera.camera_app --source 0
+  ```
+- **Dùng file ảnh tĩnh (ví dụ `test.jpg`):**
+  ```cmd
+  python -m src.camera.camera_app --source test.jpg
+  ```
+- **Dùng file video (ví dụ `video.mp4`):**
+  ```cmd
+  python -m src.camera.camera_app --source video.mp4
+  ```

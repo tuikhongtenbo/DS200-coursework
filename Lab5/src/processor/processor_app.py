@@ -17,6 +17,7 @@ def start_processing_server():
     producer = get_kafka_producer(KAFKA_BROKER)
     detector = PersonDetector()
     counter = PeopleCounter()
+    print("Processing Server is running and listening to Kafka...")
 
     for msg in consumer:
         message_data = msg.value
@@ -31,13 +32,33 @@ def start_processing_server():
         if frame is not None:
             bboxes = detector.detect(frame)
             count = counter.count(bboxes)
+            
+            # Vẽ bounding boxes lên frame
+            for box in bboxes:
+                x1, y1, x2, y2 = int(box['x1']), int(box['y1']), int(box['x2']), int(box['y2'])
+                conf = box['confidence']
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.putText(frame, f"Person {conf:.2f}", (x1, max(y1 - 10, 0)), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            
+            # Ghi số lượng người
+            cv2.putText(frame, f"Count: {count}", (20, 40), 
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
+
+            # Encode ảnh đã vẽ
+            _, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 80])
+            annotated_frame_base64 = base64.b64encode(buffer).decode('utf-8')
+
             result_message = {
                 'frame_id': frame_id,
                 'timestamp': timestamp,
                 'people_count': count,
-                'bounding_boxes': bboxes
+                'bounding_boxes': bboxes,
+                'annotated_frame': annotated_frame_base64
             }
             producer.send(TOPIC_RESULT, value=result_message)
+            print(f"Processed Frame {frame_id} - Found {count} people.")
 
 if __name__ == '__main__':
     start_processing_server()
+

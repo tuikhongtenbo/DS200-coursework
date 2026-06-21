@@ -27,4 +27,4 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: people_counter
     ports:
-      - "5432:5432"
+      - "5433:5432"

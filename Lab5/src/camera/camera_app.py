@@ -47,14 +47,28 @@ def start_camera_server(source):
             source = int(source)
 
         cap = cv2.VideoCapture(source)
+        
+        # Lấy FPS của nguồn (nếu là camera có thể không chuẩn xác, fallback về 30)
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        if fps <= 0 or fps != fps:
+            fps = 30
+            
+        interval = 0.5  # Bắt 1 frame mỗi 0.5s
+        frames_to_skip = max(1, int(fps * interval))
+
+        current_idx = 0
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
                 break
             
-            send_frame(producer, frame, frame_id)
-            frame_id += 1
-            time.sleep(1/30)
+            if current_idx % frames_to_skip == 0:
+                send_frame(producer, frame, frame_id)
+                frame_id += 1
+                # Ngủ để luồng gửi đi không bị quá nhanh so với thời gian thực
+                time.sleep(interval)
+                
+            current_idx += 1
 
         cap.release()
 

@@ -1,9 +1,15 @@
-"""
-Các hàm tiện ích khởi tạo Kafka Producer và Consumer.
-"""
-
 from kafka import KafkaProducer, KafkaConsumer
 import json
+import selectors
+
+if hasattr(selectors, 'SelectSelector'):
+    _original_unregister = selectors.SelectSelector.unregister
+    def _safe_unregister(self, fileobj):
+        try:
+            return _original_unregister(self, fileobj)
+        except (ValueError, KeyError):
+            pass
+    selectors.SelectSelector.unregister = _safe_unregister
 
 def get_kafka_producer(broker):
     return KafkaProducer(

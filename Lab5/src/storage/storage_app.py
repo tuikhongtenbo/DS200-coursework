@@ -22,7 +22,7 @@ def init_db():
         database='people_counter',
         user='admin',
         password='password',
-        port='5432'
+        port='5433'
     )
     cursor = conn.cursor()
     cursor.execute('''

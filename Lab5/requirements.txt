@@ -1,5 +1,5 @@
 opencv-python==4.8.0.76
-ultralytics==8.0.196
-kafka-python==2.0.2
+ultralytics
+kafka-python-ng==2.2.3
 numpy==1.26.0
 psycopg2-binary==2.9.9
